@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+register:
+    path: /user
+    controller: App\Controller\UserController::register
+    methods: POST
+
+api_login_check:
+   path: /user/login
+   methods: [POST]
+swagger_ui:
+    path: /docs
+    controller: api_platform.swagger.action.ui
